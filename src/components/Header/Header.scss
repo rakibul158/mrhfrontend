@@ -1,0 +1,11 @@
+@import '../../App.scss';
+
+.Header {
+    &-Wapper{
+        @include desktop{
+            h2{
+                text-align: center;
+            }
+        }
+    }
+}

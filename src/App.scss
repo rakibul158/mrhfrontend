@@ -1,8 +1,15 @@
+*{margin: 0; padding: 0; outline: 0; box-sizing: 0;}
 
-// $tablet-width: 768px;
-// $desktop-width: 1024px;
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
-// @mixin tablet {
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+// @mixin moblie {
 //   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
 //     @content;
 //   }
@@ -15,17 +22,24 @@
 // }
 
 @mixin moblie {
-  @media (max-width: 599px) { @content; }
-}
-@mixin tabletPortrait {
-  @media (min-width: 600px) { @content; }
-}
-@mixin tabletLandscape{
-  @media (min-width: 900px) { @content; }
+  @media (max-width: 810px) { @content; }
 }
 @mixin desktop {
-  @media (min-width: 1200px) { @content; }
+  @media (min-width: 811px) { @content; }
 }
-@mixin bigDeskto {
-  @media (min-width: 1800px) { @content; }
-}
+
+// @mixin moblie {
+//   @media (max-width: 599px) { @content; }
+// }
+// @mixin tabletPortrait {
+//   @media (min-width: 600px) { @content; }
+// }
+// @mixin tabletLandscape{
+//   @media (min-width: 900px) { @content; }
+// }
+// @mixin desktop {
+//   @media (min-width: 1200px) { @content; }
+// }
+// @mixin bigDeskto {
+//   @media (min-width: 1800px) { @content; }
+// }

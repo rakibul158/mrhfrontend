@@ -2,10 +2,27 @@
 
 .Header {
     &-Wapper{
+        padding: 20px 50px;
+        background: #ffc482;
         @include desktop{
             h2{
                 text-align: center;
             }
         }
+        @include moblie{
+            background: #34548a;
+        }
     }
+
+    &-Container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &-Center {
+        @include moblie{
+            display: none;
+        }
+    }
+
 }
